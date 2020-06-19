@@ -30,11 +30,11 @@ void print_image(const char* fname)
 			if (pixels[y * infoh.biWidth + x].r <= 50)
 				cout << "\xdb\xdb";
 			else if ((pixels[y * infoh.biWidth + x].r >= 51) && (pixels[y * infoh.biWidth + x].r <= 101))
-				cout << "\xd2\xd2";
+				cout << "\xb2\xb2";
 			else if ((pixels[y * infoh.biWidth + x].r >= 102) && (pixels[y * infoh.biWidth + x].r <= 152))
-				cout << "\xd1\xd1";
+				cout << "\xb1\xb1";
 			else if ((pixels[y * infoh.biWidth + x].r >= 153) && (pixels[y * infoh.biWidth + x].r <= 203))
-				cout << "\xd0\xd0";
+				cout << "\xb0\xb0";
 			else cout << "  ";
 		}
 		cout << endl;
